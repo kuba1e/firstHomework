@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", ()=>{
+window.addEventListener("load", ()=>{
   let firstArg = null;
   let secondArg = null;
   const result = document.querySelector('.result');
