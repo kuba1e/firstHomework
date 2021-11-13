@@ -23,7 +23,7 @@ window.addEventListener("load", ()=>{
   const doMult = (num1, num2)=> num1*num2;
   const doDiv = (num1, num2) => num1 / num2;
   
-  const doMath = ([num1, num2] = {})=>{
+  const doMath = ([num1, num2] = [])=>{
     const results = {}; 
     results.Summing = doSum(num1, num2);
     results.Subtraction= doSubtr(num1, num2);
