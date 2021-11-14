@@ -12,6 +12,7 @@ body {
   padding: 10px;
   width: 30%;
   color: white;
+  cursor: pointer;
 border: 2px solid white;
   font-size: 24px;
   background: #aa4b6b;  /* fallback for old browsers */
