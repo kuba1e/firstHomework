@@ -12,7 +12,8 @@ window.addEventListener("load", ()=>{
   
   function checkNumbers(val1, val2){
     if(isNaN(val1) || isNaN(val2)){
-      return alert('Please, input valid numbers!'); 
+      alert('Please, input valid numbers!'); 
+      return false 
     } else{
       return [val1, val2]
     }
@@ -48,7 +49,7 @@ window.addEventListener("load", ()=>{
   const showRes = ()=>{
     getNumbers()
     const arrNum = checkNumbers(firstArg, secondArg);
-    if(arrNum){
+    if(Boolean(arrNum)){
     const resultsValue = doMath(arrNum);
     const markUp = createNode(resultsValue);
     result.innerHTML = '';
